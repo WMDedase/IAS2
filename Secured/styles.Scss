@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(83deg, rgba(17,48,114,0.8) 27%, rgba(76,123,227,0.8) 70%, rgba(129,213,254,0.6) 95%);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333ce;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+
+}   
+.logo{
+    display: flex;
+    flex: 0.8;
+    img {
+        width: 4.5rem;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    h3{
+        align-self: center;
+        font-size: 15px;
+        color: #2bb6fc;
+        font-weight: 900;
+    }
+}
+
+.prof{
+    display: flex;
+    flex: 0.2;
+    border-left: 2px solid #2bb6fc;
+    padding-left: 1rem ;
+     img{
+        justify-self: center;
+        width: 4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        
+    }
+    h3 {
+        align-self: center;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        padding-right: 3rem;
+    }
+    a{
+        align-self: center;
+        
+        button{
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #2bb6fc;
+            color: #ffff;
+            border: none;
+
+            &:hover{
+                background-color: #81d5fe;
+            }
+        }
+    }
+
+}
+
+
+
+
+section {
+    color: #fff;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    margin: 3rem;
+    padding: 1REM;
+    background-color: #00000079;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    color: #81d5fe;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.summary-details, .performance-details {
+    margin-left: 20px;
+}
+
+.transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.transactions td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    
+}
+.transactions th{
+    color: #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.transactions th {
+    background-color: #f0f0f0;
+}
+
+.upcoming-events ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.8rem;
+}

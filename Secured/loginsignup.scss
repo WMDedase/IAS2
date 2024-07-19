@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(17,48,114);
+    background: linear-gradient(83deg, rgba(17,48,114,0.8) 27%, rgba(76,123,227,0.8) 70%, rgba(129,213,254,0.6) 95%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main {
+    padding: 3rem;
+    display: flex;
+    margin: 3.5rem;
+    background-image: url(./bank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 10px;
+    width: 70%;
+}
+
+
+.left{
+    flex: 0.5;
+    
+}
+.right{
+    flex: 0.5;
+
+}
+
+.logo{
+    display: flex;
+    
+    img {
+        width: 4.5rem;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    h3{
+        align-self: center;
+        font-size: 15px;
+        color: #2bb6fc;
+        font-weight: 900;
+    }
+}
+h4{
+    color: #81d5fe;
+}
+    form {
+        display: flex;
+        color: #ffff;
+        max-width: 300px;
+        margin: 0 auto;
+        background-color: #ffffff25;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ffffff27;
+        color: #fff;
+    }
+    
+    form button {
+        background-color: #2bb6fc;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        align-self: center;
+        width: 80%;
+        margin-left: 10px;
+    }
+    
+    form button:hover {
+        background-color: #81d5fe;
+    }
+   
+h5{
+    text-align: center;
+    a{      
+            color: #2bb6fc;
+            text-decoration: none;
+            margin-top: 20px;
+            &:hover{
+                text-decoration: underline #fff;  
+            }
+    }
+
+    }
+

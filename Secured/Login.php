@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Store user ID in session
         $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username']; 
         
         // Redirect to Dashboard.php
         header('Location: Dashboard.php');
@@ -52,14 +53,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loginsignup.scss">
 </head>
 <body>
-    <header>
-        <h1>Login</h1>
-    </header>
+
     <main>
+
+        <div class="left">
         <form action="login.php" method="post">
+            <div class="logo">
+            <img src="./bank-icon-logo-design-vector-removebg-preview.png" alt="">
+            <h3>PINEDA'S TRUST FUND</h3>
+            </div>
+            <h4>LOGIN</h4>
             <div>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -72,8 +78,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="error"><?php echo $error; ?></div>
             <?php endif; ?>
             <button type="submit">Login</button>
-            <a href="signup.php">Signup</a>
+            <h5>Doesn't have an Account?<a href="signup.php">Signup</a> </h5> 
         </form>
+        </div>
+
+        <div class="right">
+
+        </div>
+
+        
+        </div>
+
         
     </main>
 </body>
